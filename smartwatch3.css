@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    height: 100vh;
+
+    background-color: aqua;
+
+}
+
+.upcontainer {
+    display: flex;
+    gap: 20px;
+}
+
+
+.front {
+    width: 360px;
+    height: 220px;
+    background-color: aquamarine;
+
+
+}
+
+.back {
+    width: 360px;
+    height: 220px;
+    background-color: red;
+
+}
+
+.detail {
+    width: 360px;
+    height: 450px;
+    background-color: blue;
+    display: grid;
+
+    grid-template-areas: "a ..."
+        "b  ..."
+        "c  ..."
+        "d   e"
+        "f  ..."
+    ;
+
+}
+
+
+.ownername {
+    background-color: pink;
+    grid-area: a;
+}
+
+.bankname {
+    background-color: brown;
+    grid-area: b;
+}
+
+.cardnumber {
+    background-color: bisque;
+    grid-area: c;
+}
+
+.date {
+    background-color: blue;
+    grid-area: d;
+}
+
+.cvc {
+    background-color: blueviolet;
+    grid-area: e;
+    grid-column-start: 4;
+    grid-column-start: 3;
+}
+
+.paybutton {
+    background-color: darkgoldenrod;
+    grid-area: f;
+}
